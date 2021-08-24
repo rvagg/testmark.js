@@ -37,6 +37,6 @@ describe('Read', () => {
     const exampleMdOriginal = await fs.promises.readFile(exampleMd, 'utf8')
     const doc = parse(exampleMdOriginal)
     assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
-    assert.deepStrictEqual(toString(doc), exampleMdOriginal)
+    assert.deepStrictEqual(toString(doc), exampleMdOriginal.replace(/\r?\n/g, '\n'))
   })
 })

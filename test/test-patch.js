@@ -20,6 +20,6 @@ describe('Patch', () => {
       { name: 'this-one-is-new', blockTag: 'json', body: '{"hayo": "new data!"}' },
       { name: 'so-is-this', blockTag: 'json', body: '{"appending": "is fun"}' }
     ])
-    assert.strictEqual(newDoc.original, patchedMdContents)
+    assert.strictEqual(newDoc.original, patchedMdContents.replace(/\r?\n/g, '\n'))
   })
 })

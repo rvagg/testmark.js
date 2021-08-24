@@ -14,6 +14,8 @@ export function parse (original) {
     throw new TypeError('Expected a Markdown document string')
   }
 
+  original = original.replace(/\r?\n/g, '\n') // sorry Windows users, we have no chill here
+
   /** @type {Document & {original:string}} */
   const doc = {
     original,

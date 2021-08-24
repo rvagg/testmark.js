@@ -44,6 +44,8 @@ Parse a Markdown document and return a testmark `Document` object containing the
 
 See below for `Document` object specification.
 
+_Note: carriage-return characters (`\r`) are stripped during `parse()` (sorry Windows users), so a round-trip will produce a different document if you have these in your source._
+
 ### `index(document: Document): DirEnt`
 
 Take a testmark `Document` (from a `parse()`) and return a `DirEnt` that represents the test fixture data as a directory and file structure. See [exampleWithDirs.md](./exampleWithDirs.md) for an example document. Test data can be navigated through the `DirEnt` structure as if it were a set of directories and files.
@@ -177,7 +179,7 @@ export interface DirEnt {
 
 ## License and Copyright
 
-Copyright 2020 Rod Vagg
+Copyright 2021 Rod Vagg
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
