@@ -1,0 +1,34 @@
+{
+  "name": "testmark",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Language-agnostic test fixtures in Markdown",
+  "main": "testmark.js",
+  "scripts": {
+    "lint": "standard",
+    "build:types": "tsc --build",
+    "test": "npm run lint && npm run build:types && mocha test/test-*.js"
+  },
+  "types": "types/testmark.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvagg/js-testmark.git"
+  },
+  "keywords": [
+    "testing",
+    "tests",
+    "markdown",
+    "fixtures"
+  ],
+  "author": "Rod <rod@vagg.org> (http://r.va.gg/)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.7.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0",
+    "standard": "^16.0.3",
+    "typescript": "^4.3.5"
+  }
+}
