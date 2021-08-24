@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "standard",
     "build:types": "tsc --build",
+    "build": "npm run build:types",
     "test": "npm run lint && npm run build:types && mocha test/test-*.js"
   },
   "types": "types/testmark.d.ts",
