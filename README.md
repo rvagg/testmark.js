@@ -28,6 +28,7 @@ See [example.md](./example.md) for a plain testmark example document, and [examp
   * [`Hunk`](#hunk)
   * [`DocHunk`](#dochunk)
   * [`DirEnt`](#dirent)
+* [Note regarding Windows](#note-regarding-windows)
 * [License and Copyright](#license-and-copyright)
 
 ## API
@@ -175,9 +176,20 @@ export interface DirEnt {
 }
 ```
 
+## Note regarding Windows
+
+We're relying on text files and want to have byte-perfect representations of test fixtures, but this presents some problems for Windows. By default (unless the user has changed the settings), git on Windows will convert line endings to Windows style which include a carriage return (`\r`) character. This isn't good, because we don't know whether these characters are part of our fixture data or not!
+
+Our recommendation if you expect to support Windows users, or have Windows users try and run your tests, is to add a `.gitattributes` file to your Git project that uses testmark with something like the following:
+
+```
+* text=auto
+*.* text eol=lf
+```
+
 ## License and Copyright
 
-Copyright 2020 Rod Vagg
+Copyright 2021 Rod Vagg
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
