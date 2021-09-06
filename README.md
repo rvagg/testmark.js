@@ -1,4 +1,4 @@
-# testmark (for JavaScript)
+# testmark.js
 
 **Language-agnostic test fixtures in Markdown**
 
@@ -29,6 +29,7 @@ See [example.md](./example.md) for a plain testmark example document, and [examp
   * [`DocHunk`](#dochunk)
   * [`DirEnt`](#dirent)
 * [Note regarding Windows](#note-regarding-windows)
+* [Note about the package name](#note-about-the-package-name)
 * [License and Copyright](#license-and-copyright)
 
 ## API
@@ -36,7 +37,7 @@ See [example.md](./example.md) for a plain testmark example document, and [examp
 The following functions are named exports of the package:
 
 ```js
-import { parse, index, patch, toString } from 'testmark'
+import { parse, index, patch, toString } from 'testmark.js'
 ```
 
 ### `parse(md: string): Document`
@@ -186,6 +187,10 @@ Our recommendation if you expect to support Windows users, or have Windows users
 * text=auto
 *.* text eol=lf
 ```
+
+## Note about the package name
+
+Yes, `.js` extensions to packages such, but once upon a time, [Mark made a test](https://www.npmjs.com/package/test-mark) package and published it to npm, with only a package.json. npm now includes automatic typosquatting detection which they apparently cannot manually override, so nobody can publish a `testmark` package because of this. npm also refuses to remove `test-mark` even though it is a trivial package with no code in it which is in contravention with npm rules: ["Package names are considered squatted if the package has no genuine function."](https://docs.npmjs.com/policies/disputes). Yay.
 
 ## License and Copyright
 

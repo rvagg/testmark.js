@@ -1,5 +1,5 @@
 {
-  "name": "testmark",
+  "name": "testmark.js",
   "version": "1.0.0",
   "type": "module",
   "description": "Language-agnostic test fixtures in Markdown",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rvagg/js-testmark.git"
+    "url": "https://github.com/rvagg/testmark.js.git"
   },
   "keywords": [
     "testing",
