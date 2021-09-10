@@ -183,6 +183,8 @@ Ideally when we're relying on text files for test data input we'd want to have b
 
 So, testmark takes a rather brute-force approach to this problem and just strips out carriage return characters when they appear with a line-ending. In practice this _may_ impact the byte-perfect requirements for test fixtures, so you should be careful when using data that strays outside of standard printable character range, especially when control characters get involved. This is a text file format, if your data isn't text, then make it text by encoding in hex or base64 or something that reduces the character set to the safe range.
 
+The `Document#original` property and `toString()` function are going to result in text that only uses UNIX line endings (`\n`). So even your input document will be transformed if it does a round-trip through testmark on Windows. Be warned!
+
 ## Note about the package name
 
 Yes, `.js` extensions to packages such, but once upon a time, [Mark made a test](https://www.npmjs.com/package/test-mark) package and published it to npm, with only a package.json. npm now includes automatic typosquatting detection which they apparently cannot manually override, so nobody can publish a `testmark` package because of this. npm also refuses to remove `test-mark` even though it is a trivial package with no code in it which is in contravention with npm rules: ["Package names are considered squatted if the package has no genuine function."](https://docs.npmjs.com/policies/disputes). Yay.

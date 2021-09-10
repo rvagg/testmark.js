@@ -34,19 +34,28 @@ const exampleMdExpectedHunks = [
 describe('Read', () => {
   /** @type {string} */
   let exampleMdOriginal
+  let isWindows = false
 
   before(async () => {
     const exampleMd = new URL('../example.md', import.meta.url)
     exampleMdOriginal = await fs.promises.readFile(exampleMd, 'utf8')
+    isWindows = exampleMdOriginal.includes('\r\n')
   })
 
   it('can parse example.md', async () => {
     const doc = parse(exampleMdOriginal)
     assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
-    assert.deepStrictEqual(toString(doc), exampleMdOriginal)
+    if (isWindows) {
+      assert.deepStrictEqual(toString(doc).replace(/\n/g, '\r\n'), exampleMdOriginal)
+    } else {
+      assert.deepStrictEqual(toString(doc), exampleMdOriginal)
+    }
   })
 
-  it('can parse example.md as windows', async () => {
+  it('can parse example.md as windows', async function () {
+    if (isWindows) { // skip test on windows
+      return this.skip()
+    }
     const exampleMdOriginalWindows = exampleMdOriginal.replace(/\r?\n/g, '\r\n')
     const doc = parse(exampleMdOriginalWindows)
     assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)

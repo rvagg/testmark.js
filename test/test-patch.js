@@ -10,6 +10,7 @@ describe('Patch', () => {
   it('can patch example.md', async () => {
     const exampleMd = new URL('../example.md', import.meta.url)
     const exampleMdOriginal = await fs.promises.readFile(exampleMd, 'utf8')
+    const isWindows = exampleMdOriginal.includes('\r\n')
     const patchedMd = new URL('./patch_expected.md', import.meta.url)
     // extracted from patch_test.go
     const patchedMdContents = await fs.promises.readFile(patchedMd, 'utf8')
@@ -20,6 +21,10 @@ describe('Patch', () => {
       { name: 'this-one-is-new', blockTag: 'json', body: '{"hayo": "new data!"}' },
       { name: 'so-is-this', blockTag: 'json', body: '{"appending": "is fun"}' }
     ])
-    assert.strictEqual(newDoc.original, patchedMdContents)
+    if (isWindows) {
+      assert.strictEqual(newDoc.original.replace(/\n/g, '\r\n'), patchedMdContents)
+    } else {
+      assert.strictEqual(newDoc.original, patchedMdContents)
+    }
   })
 })
