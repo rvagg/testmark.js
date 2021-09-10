@@ -1,3 +1,15 @@
+### [1.0.1](https://github.com/rvagg/testmark.js/compare/v1.0.0...v1.0.1) (2021-09-10)
+
+
+### Bug Fixes
+
+* handle windows crlf with more brutality ([7aa1c75](https://github.com/rvagg/testmark.js/commit/7aa1c7516eb51849e2341df374a9865037853cf1))
+
+
+### Trivial Changes
+
+* make tests work properly on windows, moar doc ([e781853](https://github.com/rvagg/testmark.js/commit/e78185331e8f760d7beef56d947535f4b39706f3))
+
 ## 1.0.0 (2021-09-06)
 
 
