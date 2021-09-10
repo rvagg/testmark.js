@@ -179,14 +179,9 @@ export interface DirEnt {
 
 ## Note regarding Windows
 
-We're relying on text files and want to have byte-perfect representations of test fixtures, but this presents some problems for Windows. By default (unless the user has changed the settings), git on Windows will convert line endings to Windows style which include a carriage return (`\r`) character. This isn't good, because we don't know whether these characters are part of our fixture data or not!
+Ideally when we're relying on text files for test data input we'd want to have byte-perfect representations of fixtures, but this presents some problems for Windows. By default (unless the user has changed the settings), git on Windows will convert line endings to Windows style which include a carriage return (`\r`) character. This isn't good, because we don't know whether these characters are part of our fixture data or not!
 
-Our recommendation if you expect to support Windows users, or have Windows users try and run your tests, is to add a `.gitattributes` file to your Git project that uses testmark with something like the following:
-
-```
-* text=auto
-*.* text eol=lf
-```
+So, testmark takes a rather brute-force approach to this problem and just strips out carriage return characters when they appear with a line-ending. In practice this _may_ impact the byte-perfect requirements for test fixtures, so you should be careful when using data that strays outside of standard printable character range, especially when control characters get involved. This is a text file format, if your data isn't text, then make it text by encoding in hex or base64 or something that reduces the character set to the safe range.
 
 ## Note about the package name
 

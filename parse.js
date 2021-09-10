@@ -14,10 +14,13 @@ export function parse (original) {
     throw new TypeError('Expected a Markdown document string')
   }
 
+  // sorry windows users, we're even turning your original to unix
+  original = original.replace(/\r?\n/g, '\n')
+
   /** @type {Document & {original:string}} */
   const doc = {
     original,
-    lines: original.split('\n'), // can't split with \r? because we need offsets
+    lines: original.split('\n'),
     dataHunks: /** @type {DocHunk[]} */ ([]),
     hunksByName: new Map()
   }

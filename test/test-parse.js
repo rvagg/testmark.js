@@ -32,10 +32,23 @@ const exampleMdExpectedHunks = [
 ]
 
 describe('Read', () => {
-  it('can parse example.md', async () => {
+  /** @type {string} */
+  let exampleMdOriginal
+
+  before(async () => {
     const exampleMd = new URL('../example.md', import.meta.url)
-    const exampleMdOriginal = await fs.promises.readFile(exampleMd, 'utf8')
+    exampleMdOriginal = await fs.promises.readFile(exampleMd, 'utf8')
+  })
+
+  it('can parse example.md', async () => {
     const doc = parse(exampleMdOriginal)
+    assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
+    assert.deepStrictEqual(toString(doc), exampleMdOriginal)
+  })
+
+  it('can parse example.md as windows', async () => {
+    const exampleMdOriginalWindows = exampleMdOriginal.replace(/\r?\n/g, '\r\n')
+    const doc = parse(exampleMdOriginalWindows)
     assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
     assert.deepStrictEqual(toString(doc), exampleMdOriginal)
   })
