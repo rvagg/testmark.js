@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/rvagg/testmark.js/compare/v1.0.1...v1.0.2) (2021-09-28)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/setup-node from 2.4.0 to 2.4.1 ([34fda5d](https://github.com/rvagg/testmark.js/commit/34fda5d76a355a25a1ac6702d45ea2a161b683df))
+
 ### [1.0.1](https://github.com/rvagg/testmark.js/compare/v1.0.0...v1.0.1) (2021-09-10)
 
 
