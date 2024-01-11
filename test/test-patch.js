@@ -2,7 +2,7 @@
 
 import fs from 'fs'
 import { parse, patch } from '../testmark.js'
-import chai from 'chai'
+import * as chai from 'chai'
 
 const { assert } = chai
 
