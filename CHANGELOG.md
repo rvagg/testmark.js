@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/rvagg/testmark.js/compare/v1.0.8...v1.0.9) (2024-01-11)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump chai from 4.3.10 to 5.0.0 ([ab2c64a](https://github.com/rvagg/testmark.js/commit/ab2c64a40f8efe22eab4a8cd94f5a38e3853fc07))
+
 ## [1.0.8](https://github.com/rvagg/testmark.js/compare/v1.0.7...v1.0.8) (2024-01-11)
 
 
