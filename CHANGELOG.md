@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/rvagg/testmark.js/compare/v1.0.9...v1.0.10) (2024-08-02)
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 20.14.13 to 22.0.2 ([a15a4bb](https://github.com/rvagg/testmark.js/commit/a15a4bb22bcd13debb5e8393595b134454c31cb2))
+* release with LTS Node.js ([a61d4ce](https://github.com/rvagg/testmark.js/commit/a61d4ce0e31abfc7cb513825c1f4be5e475d0144))
+* update Node.js versions ([dbf2b96](https://github.com/rvagg/testmark.js/commit/dbf2b96941ec364a0b47fd3e44d7d3ff0c1996ec))
+
 ## [1.0.9](https://github.com/rvagg/testmark.js/compare/v1.0.8...v1.0.9) (2024-01-11)
 
 
