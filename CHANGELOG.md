@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/rvagg/testmark.js/compare/v1.0.11...v1.0.12) (2024-12-04)
+
+### Trivial Changes
+
+* **deps-dev:** bump mocha from 10.8.2 to 11.0.1 ([90763f8](https://github.com/rvagg/testmark.js/commit/90763f8be782ea2694b44106155b59f89dce7aab))
+
 ## [1.0.11](https://github.com/rvagg/testmark.js/compare/v1.0.10...v1.0.11) (2024-09-26)
 
 ### Trivial Changes
