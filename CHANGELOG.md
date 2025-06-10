@@ -1,3 +1,9 @@
+## [1.0.13](https://github.com/rvagg/testmark.js/compare/v1.0.12...v1.0.13) (2025-06-10)
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 22.15.31 to 24.0.0 ([adc9493](https://github.com/rvagg/testmark.js/commit/adc9493cc1f46311eb8852bf7680b50c027a187a))
+
 ## [1.0.12](https://github.com/rvagg/testmark.js/compare/v1.0.11...v1.0.12) (2024-12-04)
 
 ### Trivial Changes

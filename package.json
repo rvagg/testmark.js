@@ -1,6 +1,6 @@
 {
   "name": "testmark.js",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "type": "module",
   "description": "Language-agnostic test fixtures in Markdown",
   "main": "testmark.js",
