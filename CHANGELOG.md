@@ -1,3 +1,9 @@
+## [1.0.14](https://github.com/rvagg/testmark.js/compare/v1.0.13...v1.0.14) (2025-08-13)
+
+### Trivial Changes
+
+* **deps:** bump actions/checkout from 4 to 5 ([#30](https://github.com/rvagg/testmark.js/issues/30)) ([004ed6f](https://github.com/rvagg/testmark.js/commit/004ed6ff431ccfb6b04dfb00fbfb803ab8afc519))
+
 ## [1.0.13](https://github.com/rvagg/testmark.js/compare/v1.0.12...v1.0.13) (2025-06-10)
 
 ### Trivial Changes
