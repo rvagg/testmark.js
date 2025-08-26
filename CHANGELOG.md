@@ -1,3 +1,9 @@
+## [1.0.15](https://github.com/rvagg/testmark.js/compare/v1.0.14...v1.0.15) (2025-08-26)
+
+### Trivial Changes
+
+* **deps-dev:** bump chai from 5.3.3 to 6.0.1 ([#31](https://github.com/rvagg/testmark.js/issues/31)) ([394e2a5](https://github.com/rvagg/testmark.js/commit/394e2a5d654b6369bdae42d283a0b01211b775b9))
+
 ## [1.0.14](https://github.com/rvagg/testmark.js/compare/v1.0.13...v1.0.14) (2025-08-13)
 
 ### Trivial Changes
