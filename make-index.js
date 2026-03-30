@@ -1,7 +1,7 @@
 /**
- * @typedef {import('./interface').DirEnt} DirEnt
- * @typedef {import('./interface').Document} Document
- * @typedef {import('./interface').Hunk} Hunk
+ * @typedef {import('./interface.js').DirEnt} DirEnt
+ * @typedef {import('./interface.js').Document} Document
+ * @typedef {import('./interface.js').Hunk} Hunk
  */
 
 /**

@@ -1,7 +1,7 @@
 /**
- * @typedef {import('./interface').DirEnt} DirEnt
- * @typedef {import('./interface').Document} Document
- * @typedef {import('./interface').Hunk} Hunk
+ * @typedef {import('./interface.js').DirEnt} DirEnt
+ * @typedef {import('./interface.js').Document} Document
+ * @typedef {import('./interface.js').Hunk} Hunk
  */
 /**
  * Generate an index over the hunks, which treats their names as if they were
@@ -12,7 +12,7 @@
  * @returns {DirEnt}
  */
 export function index(document: Document): DirEnt;
-export type DirEnt = import('./interface').DirEnt;
-export type Document = import('./interface').Document;
-export type Hunk = import('./interface').Hunk;
+export type DirEnt = import("./interface.js").DirEnt;
+export type Document = import("./interface.js").Document;
+export type Hunk = import("./interface.js").Hunk;
 //# sourceMappingURL=make-index.d.ts.map

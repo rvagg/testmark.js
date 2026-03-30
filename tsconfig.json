@@ -17,21 +17,16 @@
     "alwaysStrict": true,
     "esModuleInterop": true,
     "target": "es2018",
-    "module": "es2020",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "declaration": true,
     "declarationMap": true,
     "outDir": "types",
     "skipLibCheck": true,
     "stripInternal": true,
     "resolveJsonModule": true,
-    "baseUrl": ".",
     "emitDeclarationOnly": true,
-    "paths": {
-      "testmark": [
-        "testmark.js"
-      ]
-    }
+    "types": ["node", "mocha"]
   },
   "exclude": [
     "node_modules",

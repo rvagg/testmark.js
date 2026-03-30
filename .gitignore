@@ -1,2 +1,4 @@
 node_modules/
-types/test/
+types/test/types/tsconfig.tsbuildinfo
+package-lock.json
+types/tsconfig.tsbuildinfo
