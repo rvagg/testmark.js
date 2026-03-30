@@ -19,13 +19,13 @@ export function isDocHunk(hunk: DocHunk): boolean;
  */
 export function isHunk(hunk: Hunk): boolean;
 /**
- * @typedef {import('./interface').DocHunk} DocHunk
- * @typedef {import('./interface').Document} Document
- * @typedef {import('./interface').Hunk} Hunk
+ * @typedef {import('./interface.js').DocHunk} DocHunk
+ * @typedef {import('./interface.js').Document} Document
+ * @typedef {import('./interface.js').Hunk} Hunk
  */
 export const testmarkNamedRef: "[testmark]:#";
 export const testmarkNamedRe: RegExp;
-export type DocHunk = import('./interface').DocHunk;
-export type Document = import('./interface').Document;
-export type Hunk = import('./interface').Hunk;
+export type DocHunk = import("./interface.js").DocHunk;
+export type Document = import("./interface.js").Document;
+export type Hunk = import("./interface.js").Hunk;
 //# sourceMappingURL=util.d.ts.map

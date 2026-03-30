@@ -29,12 +29,12 @@
   "author": "Rod <rod@vagg.org> (http://r.va.gg/)",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/chai": "^5.0.0",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^25.0.0",
-    "chai": "^6.0.1",
-    "mocha": "^11.0.1",
-    "standard": "^17.1.0",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.5.0",
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "standard": "^17.1.2",
     "typescript": "^6.0.2"
   },
   "release": {

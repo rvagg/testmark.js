@@ -1,8 +1,8 @@
 import { testmarkNamedRe, testmarkNamedRef } from './util.js'
 
 /**
- * @typedef {import('./interface').DocHunk} DocHunk
- * @typedef {import('./interface').Document} Document
+ * @typedef {import('./interface.js').DocHunk} DocHunk
+ * @typedef {import('./interface.js').Document} Document
  */
 
 /**
