@@ -1,10 +1,7 @@
-/* eslint-env mocha */
-
-import fs from 'fs'
+import fs from 'node:fs'
+import { describe, it, before } from 'node:test'
+import assert from 'node:assert/strict'
 import { parse, toString } from '../testmark.js'
-import * as chai from 'chai'
-
-const { assert } = chai
 
 // extracted from read_test.go
 const exampleMdExpectedHunks = [
@@ -44,7 +41,7 @@ describe('Read', () => {
 
   it('can parse example.md', async () => {
     const doc = parse(exampleMdOriginal)
-    assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
+    assert.deepStrictEqual(doc.dataHunks, exampleMdExpectedHunks)
     if (isWindows) {
       assert.deepStrictEqual(toString(doc).replace(/\n/g, '\r\n'), exampleMdOriginal)
     } else {
@@ -52,13 +49,14 @@ describe('Read', () => {
     }
   })
 
-  it('can parse example.md as windows', async function () {
-    if (isWindows) { // skip test on windows
-      return this.skip()
+  it('can parse example.md as windows', { skip: false }, async (t) => {
+    if (isWindows) {
+      t.skip()
+      return
     }
     const exampleMdOriginalWindows = exampleMdOriginal.replace(/\r?\n/g, '\r\n')
     const doc = parse(exampleMdOriginalWindows)
-    assert.deepStrictEqual(exampleMdExpectedHunks, doc.dataHunks)
+    assert.deepStrictEqual(doc.dataHunks, exampleMdExpectedHunks)
     assert.deepStrictEqual(toString(doc), exampleMdOriginal)
   })
 })

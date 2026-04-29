@@ -1,10 +1,7 @@
-/* eslint-env mocha */
-
-import fs from 'fs'
+import fs from 'node:fs'
+import { describe, it } from 'node:test'
+import assert from 'node:assert/strict'
 import { parse, patch } from '../testmark.js'
-import * as chai from 'chai'
-
-const { assert } = chai
 
 describe('Patch', () => {
   it('can patch example.md', async () => {

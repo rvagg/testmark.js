@@ -1,10 +1,7 @@
-/* eslint-env mocha */
-
-import fs from 'fs'
+import fs from 'node:fs'
+import { describe, it } from 'node:test'
+import assert from 'node:assert/strict'
 import { parse, index } from '../testmark.js'
-import * as chai from 'chai'
-
-const { assert } = chai
 
 describe('Index', () => {
   it('can parse and index exampleWithDirs.md', async () => {

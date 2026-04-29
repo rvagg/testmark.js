@@ -1,5 +1,7 @@
 # testmark.js
 
+[![NPM](https://nodei.co/npm/testmark.js.svg?style=flat&data=n,v&color=blue)](https://nodei.co/npm/testmark.js/)
+
 **Language-agnostic test fixtures in Markdown**
 
 _Based on the Go [reference implementation](https://github.com/warpfork/go-testmark)_
