@@ -1,3 +1,14 @@
+## [1.0.19](https://github.com/rvagg/testmark.js/compare/v1.0.18...v1.0.19) (2026-04-29)
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 24.10.3 to 25.0.0 ([#35](https://github.com/rvagg/testmark.js/issues/35)) ([9a2d1b5](https://github.com/rvagg/testmark.js/commit/9a2d1b59023bab3652387b9bed64f3893ea8c606))
+* **deps-dev:** bump typescript from 5.9.3 to 6.0.2 ([0c7c2dd](https://github.com/rvagg/testmark.js/commit/0c7c2dd17999fe423830bf4689e1eba27627426f))
+* **deps:** bump actions/setup-node from 6 to 6.3.0 ([#37](https://github.com/rvagg/testmark.js/issues/37)) ([51bae31](https://github.com/rvagg/testmark.js/commit/51bae31fed3fa95426e6134973e05d8fdf34cb4e))
+* **deps:** bump actions/setup-node from 6.3.0 to 6.4.0 ([#38](https://github.com/rvagg/testmark.js/issues/38)) ([49761d5](https://github.com/rvagg/testmark.js/commit/49761d51912699a9169ef3bfd93b17c861585a77))
+* minor modernisation ([#39](https://github.com/rvagg/testmark.js/issues/39)) ([6faf16c](https://github.com/rvagg/testmark.js/commit/6faf16c6202b69054f1b8fa4a761eb12a0d96048))
+* update deps, upgrade to typescript 6, clean up CI ([57a0df2](https://github.com/rvagg/testmark.js/commit/57a0df2437cf63355dc50c6ae1b6aa7229cc56c3))
+
 ## [1.0.18](https://github.com/rvagg/testmark.js/compare/v1.0.17...v1.0.18) (2025-11-24)
 
 ### Trivial Changes
