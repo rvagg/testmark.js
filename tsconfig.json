@@ -16,9 +16,9 @@
     "strict": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
-    "target": "es2018",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "declaration": true,
     "declarationMap": true,
     "outDir": "types",
@@ -26,8 +26,16 @@
     "stripInternal": true,
     "resolveJsonModule": true,
     "emitDeclarationOnly": true,
-    "types": ["node", "mocha"]
+    "types": ["node"]
   },
+  "include": [
+    "testmark.js",
+    "parse.js",
+    "make-index.js",
+    "patch.js",
+    "util.js",
+    "interface.ts"
+  ],
   "exclude": [
     "node_modules",
     "types"

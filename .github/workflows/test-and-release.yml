@@ -1,5 +1,6 @@
 name: Test & Maybe Release
 on: [push, pull_request]
+
 jobs:
   test:
     strategy:
@@ -16,16 +17,24 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install Dependencies
+        run: npm install --no-progress
+      - name: Check build is up to date
         run: |
-          npm install --no-progress
+          npm run build
+          git diff --exit-code || (echo "::error::Build artifacts not committed. Run 'npm run build' and commit the changes." && exit 1)
       - name: Run tests
-        run: |
-          npm test
+        run: npm test
+
   release:
     name: Release
     needs: test
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -35,26 +44,13 @@ jobs:
         uses: actions/setup-node@v6.4.0
         with:
           node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
-        run: |
-          npm install --no-progress --no-package-lock --no-save
+        run: npm install --no-progress --no-package-lock --no-save
       - name: Build
-        run: |
-          npm run build
-      - name: Install plugins
-        run: |
-          npm install \
-            @semantic-release/commit-analyzer \
-            conventional-changelog-conventionalcommits \
-            @semantic-release/release-notes-generator \
-            @semantic-release/npm \
-            @semantic-release/github \
-            @semantic-release/git \
-            @semantic-release/changelog \
-            --no-progress --no-package-lock --no-save
+        run: npm run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
         run: npx semantic-release
-
