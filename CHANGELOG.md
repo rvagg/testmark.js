@@ -1,3 +1,9 @@
+## [1.0.21](https://github.com/rvagg/testmark.js/compare/v1.0.20...v1.0.21) (2026-06-22)
+
+### Trivial Changes
+
+* **deps:** bump actions/checkout from 6.0.2 to 6.0.3 ([#41](https://github.com/rvagg/testmark.js/issues/41)) ([811adb3](https://github.com/rvagg/testmark.js/commit/811adb3035ed9adc9399a8d1543be5cf14e482b2))
+
 ## [1.0.20](https://github.com/rvagg/testmark.js/compare/v1.0.19...v1.0.20) (2026-06-04)
 
 ### Trivial Changes
