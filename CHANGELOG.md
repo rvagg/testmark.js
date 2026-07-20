@@ -1,3 +1,5 @@
+## [1.0.25](https://github.com/rvagg/testmark.js/compare/v1.0.24...v1.0.25) (2026-07-20)
+
 ## [1.0.24](https://github.com/rvagg/testmark.js/compare/v1.0.23...v1.0.24) (2026-07-03)
 
 ## [1.0.23](https://github.com/rvagg/testmark.js/compare/v1.0.22...v1.0.23) (2026-06-29)
