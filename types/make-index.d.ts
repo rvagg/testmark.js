@@ -3,6 +3,9 @@
  * @typedef {import('./interface.js').Document} Document
  * @typedef {import('./interface.js').Hunk} Hunk
  */
+export type DirEnt = import('./interface.js').DirEnt;
+export type Document = import('./interface.js').Document;
+export type Hunk = import('./interface.js').Hunk;
 /**
  * Generate an index over the hunks, which treats their names as if they were
  * unix-style paths—meaning they're split by slashes, and each segment is
@@ -11,8 +14,5 @@
  * @param {Document} document
  * @returns {DirEnt}
  */
-export function index(document: Document): DirEnt;
-export type DirEnt = import("./interface.js").DirEnt;
-export type Document = import("./interface.js").Document;
-export type Hunk = import("./interface.js").Hunk;
+export declare function index(document: Document): DirEnt;
 //# sourceMappingURL=make-index.d.ts.map

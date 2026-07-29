@@ -1,1 +1,1 @@
-{"version":3,"file":"testmark.d.ts","sourceRoot":"","sources":["../testmark.js"],"names":[],"mappings":"sBAAsB,YAAY;sBACZ,iBAAiB;sBACjB,YAAY;yBACT,WAAW"}
+{"version":3,"file":"testmark.d.ts","sourceRoot":"","sources":["../testmark.js"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,YAAY,CAAA;AAClC,OAAO,EAAE,KAAK,EAAE,MAAM,iBAAiB,CAAA;AACvC,OAAO,EAAE,KAAK,EAAE,MAAM,YAAY,CAAA;AAClC,OAAO,EAAE,QAAQ,EAAE,MAAM,WAAW,CAAA;AAEpC,OAAO,EAAE,KAAK,EAAE,KAAK,EAAE,KAAK,EAAE,QAAQ,EAAE,CAAA"}
