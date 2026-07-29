@@ -1,3 +1,5 @@
+export type DocHunk = import('./interface.js').DocHunk;
+export type Document = import('./interface.js').Document;
 /**
  * @typedef {import('./interface.js').DocHunk} DocHunk
  * @typedef {import('./interface.js').Document} Document
@@ -6,7 +8,5 @@
  * @param {string} original
  * @returns {Document}
  */
-export function parse(original: string): Document;
-export type DocHunk = import("./interface.js").DocHunk;
-export type Document = import("./interface.js").Document;
+export declare function parse(original: string): Document;
 //# sourceMappingURL=parse.d.ts.map

@@ -1,3 +1,6 @@
+export type DocHunk = import('./interface.js').DocHunk;
+export type Document = import('./interface.js').Document;
+export type Hunk = import('./interface.js').Hunk;
 /**
  * @typedef {import('./interface.js').DocHunk} DocHunk
  * @typedef {import('./interface.js').Document} Document
@@ -8,8 +11,5 @@
  * @param {Hunk[]} hunks
  * @returns {Document}
  */
-export function patch(doc: Document, hunks: Hunk[]): Document;
-export type DocHunk = import("./interface.js").DocHunk;
-export type Document = import("./interface.js").Document;
-export type Hunk = import("./interface.js").Hunk;
+export declare function patch(doc: Document, hunks: Hunk[]): Document;
 //# sourceMappingURL=patch.d.ts.map
