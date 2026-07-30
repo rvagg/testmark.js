@@ -1,3 +1,9 @@
+## [1.0.29](https://github.com/rvagg/testmark.js/compare/v1.0.28...v1.0.29) (2026-07-30)
+
+### Trivial Changes
+
+* downgrade broken changelog maker, backfill entries ([#50](https://github.com/rvagg/testmark.js/issues/50)) ([abac62b](https://github.com/rvagg/testmark.js/commit/abac62b4c6aed11323aab4040e51ae2beac1d2f0))
+
 ## [1.0.28](https://github.com/rvagg/testmark.js/compare/v1.0.27...v1.0.28) (2026-07-29)
 
 ### Trivial Changes
