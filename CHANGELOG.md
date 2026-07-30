@@ -1,12 +1,33 @@
 ## [1.0.28](https://github.com/rvagg/testmark.js/compare/v1.0.27...v1.0.28) (2026-07-29)
 
+### Trivial Changes
+
+* **deps-dev:** bump typescript from 6.0.3 to 7.0.2 ([837640c](https://github.com/rvagg/testmark.js/commit/837640c77137b179f566182bd255f596cb8672e3))
+* fixes for ts@7 ([3b9ee30](https://github.com/rvagg/testmark.js/commit/3b9ee30ccbaa8518e1d1381bf01e19f4cbcff3ff))
+
 ## [1.0.27](https://github.com/rvagg/testmark.js/compare/v1.0.26...v1.0.27) (2026-07-29)
+
+### Trivial Changes
+
+* **deps:** bump the github-actions-minor-patch group with 2 updates ([#49](https://github.com/rvagg/testmark.js/issues/49)) ([a7e2e56](https://github.com/rvagg/testmark.js/commit/a7e2e564627fa00d9b06a0ce234499a27354b0f4))
 
 ## [1.0.26](https://github.com/rvagg/testmark.js/compare/v1.0.25...v1.0.26) (2026-07-22)
 
+### Trivial Changes
+
+* **ci:** slow down dependabot, add depsound, pin action hashes ([#48](https://github.com/rvagg/testmark.js/issues/48)) ([64187c2](https://github.com/rvagg/testmark.js/commit/64187c257e364f5ce6be575ee082863e6c732330))
+
 ## [1.0.25](https://github.com/rvagg/testmark.js/compare/v1.0.24...v1.0.25) (2026-07-20)
 
+### Trivial Changes
+
+* **deps:** bump actions/setup-node from 6.4.0 to 7.0.0 ([#46](https://github.com/rvagg/testmark.js/issues/46)) ([e2a44ab](https://github.com/rvagg/testmark.js/commit/e2a44abc3e12d8bfbb8eda12ee92eed801b60767))
+
 ## [1.0.24](https://github.com/rvagg/testmark.js/compare/v1.0.23...v1.0.24) (2026-07-03)
+
+### Trivial Changes
+
+* **deps-dev:** bump conventional-changelog-conventionalcommits ([#44](https://github.com/rvagg/testmark.js/issues/44)) ([0d16c15](https://github.com/rvagg/testmark.js/commit/0d16c1583773a500dd65ff90aa1e6aeac9c6cdfe))
 
 ## [1.0.23](https://github.com/rvagg/testmark.js/compare/v1.0.22...v1.0.23) (2026-06-29)
 
