@@ -1,3 +1,9 @@
+## [1.0.31](https://github.com/rvagg/testmark.js/compare/v1.0.30...v1.0.31) (2026-08-03)
+
+### Trivial Changes
+
+* **deps-dev:** bump @semantic-release/git from 10.0.1 to 11.0.1 ([#52](https://github.com/rvagg/testmark.js/issues/52)) ([785ccbb](https://github.com/rvagg/testmark.js/commit/785ccbb12112474bca466ad91c806a0bde2530e7))
+
 ## [1.0.30](https://github.com/rvagg/testmark.js/compare/v1.0.29...v1.0.30) (2026-08-03)
 
 ### Trivial Changes
