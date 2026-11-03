@@ -1,3 +1,9 @@
+## [1.0.35](https://github.com/rvagg/testmark.js/compare/v1.0.34...v1.0.35) (2026-11-03)
+
+### Trivial Changes
+
+* **deps:** bump the github-actions-minor-patch group with 2 updates ([#60](https://github.com/rvagg/testmark.js/issues/60)) ([4d61f17](https://github.com/rvagg/testmark.js/commit/4d61f173d680e1e94e10d6cf7ecd3fe6c43170e1))
+
 ## [1.0.34](https://github.com/rvagg/testmark.js/compare/v1.0.33...v1.0.34) (2026-10-27)
 
 ### Trivial Changes
